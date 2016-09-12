@@ -7,6 +7,13 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+<<<<<<< HEAD
+=======
+import java.util.Set;
+import java.util.function.Supplier;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+>>>>>>> 5aca98717a06dd55736ddff0219afb2935ee5e7d
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -94,6 +101,35 @@ public class Tester
 		assertTrue(true);
 	}
 	
+<<<<<<< HEAD
+=======
+	@Test
+	public void testStream()
+	{
+		List<String> names = new ArrayList<>(Arrays.asList("Esteban", "Judith", "Maria Isabel", "Alejandro", "Eduardo", "Fernando"));
+		
+		List<String> newNames = names.stream().map(s -> s.toUpperCase()).filter(s -> s.startsWith("E")).sorted().collect(Collectors.toList());
+		
+		logger.info(newNames.getClass().getName());
+		
+		logger.info("newNames = " + newNames.toString());
+		
+		Set<String> set = names.stream().map(s -> s.toUpperCase()).filter(s -> s.contains("N")).collect(Collectors.toSet());
+		
+		logger.info(set.getClass().getName());
+		
+		logger.info("set = " + set.toString());
+		
+		List<Integer> ages = new ArrayList<>(Arrays.asList(60, 60, 36, 35, 32, 21));
+		
+		int sum = ages.stream().collect(Collectors.summingInt(i -> i));
+		
+		logger.info("sum = " + sum);
+		
+		assertTrue(true);
+	}
+	
+>>>>>>> 5aca98717a06dd55736ddff0219afb2935ee5e7d
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception
 	{
