@@ -7,10 +7,13 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+<<<<<<< HEAD
+=======
 import java.util.Set;
 import java.util.function.Supplier;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
+>>>>>>> 5aca98717a06dd55736ddff0219afb2935ee5e7d
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -98,6 +101,8 @@ public class Tester
 		assertTrue(true);
 	}
 	
+<<<<<<< HEAD
+=======
 	@Test
 	public void testStream()
 	{
@@ -124,6 +129,7 @@ public class Tester
 		assertTrue(true);
 	}
 	
+>>>>>>> 5aca98717a06dd55736ddff0219afb2935ee5e7d
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception
 	{
